@@ -44,7 +44,7 @@
     <button onclick={toggleFullscreen} aria-label="Toggle Fullscreen"></button>
   </div>
   <div class="title">
-    <a href="https://github.com/0x5045414b" target="_blank">
+    <a href="https://github.com/dnpkuk" target="_blank">
       <GitHub />
       <h1>Dan Peak</h1>
     </a>

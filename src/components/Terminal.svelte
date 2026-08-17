@@ -41,7 +41,7 @@
     <img src={terminalIcon} alt="Terminal Icon" />
     <span>Terminal</span>
   </button>
-  <button onclick={() => goto("https://github.com/0x5045414b")}>
+  <button onclick={() => goto("https://github.com/dnpkuk")}>
     <img src={githubIcon} alt="GitHub Icon" />
     <span>GitHub</span>
   </button>

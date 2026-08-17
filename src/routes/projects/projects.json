@@ -14,7 +14,7 @@
     "response": {
       "text": "Meal Planner and Scheduler. Integrates with supermarket internal APIs to get the latest prices.",
       "technologies": ["Dart", "Flutter", "Bun", "Elysia"],
-      "links": [{ "text": "GitHub", "handler": "https://github.com/0x5045414b/MealPlanner" }]
+      "links": [{ "text": "GitHub", "handler": "https://github.com/dnpkuk/MealPlanner" }]
     }
   },
   {
@@ -25,7 +25,7 @@
       "technologies": ["React", "Netlify"],
       "links": [
         { "text": "Website", "handler": "https://lingo.danpeak.co.uk" },
-        { "text": "GitHub", "handler": "https://github.com/0x5045414b/Lingo" }
+        { "text": "GitHub", "handler": "https://github.com/dnpkuk/Lingo" }
       ]
     }
   },
@@ -36,8 +36,8 @@
       "text": "Client libraries to access Alexa APIs for NodeJS & Go.",
       "technologies": ["Go", "TypeScript"],
       "links": [
-        { "text": "Github - NodeJS", "handler": "https://github.com/0x5045414b/AlexaQueryNode" },
-        { "text": "Github - Go", "handler": "https://github.com/0x5045414b/AlexaQuery" },
+        { "text": "Github - NodeJS", "handler": "https://github.com/dnpkuk/AlexaQueryNode" },
+        { "text": "Github - Go", "handler": "https://github.com/dnpkuk/AlexaQuery" },
         { "text": "Github - Dart", "handler": "https://github.com/smartclock-app/AlexaQuery" }
       ]
     }
