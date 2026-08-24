@@ -1,20 +1,11 @@
 [
   {
-    "title": "SmartClock",
-    "request": "./projects/SmartClock",
+    "title": "Sekund",
+    "request": "./projects/Sekund",
     "response": {
-      "text": "Smart Clock integrates with many APIs to show you the time, weather, your calendar, and more.",
-      "technologies": ["Dart", "Flutter"],
-      "links": [{ "text": "GitHub", "handler": "https://github.com/smartclock-app/Clock" }]
-    }
-  },
-  {
-    "title": "MealPlanner",
-    "request": "./projects/MealPlanner",
-    "response": {
-      "text": "Meal Planner and Scheduler. Integrates with supermarket internal APIs to get the latest prices.",
-      "technologies": ["Dart", "Flutter", "Bun", "Elysia"],
-      "links": [{ "text": "GitHub", "handler": "https://github.com/dnpkuk/MealPlanner" }]
+      "text": "Sekund is an IOT smart clock that integrates with many APIs to show you the time, weather, your calendar, and more.",
+      "technologies": ["Tauri", "Svelte", "TypeScript"],
+      "links": [{ "text": "GitHub", "handler": "https://github.com/smartclock-app/Sekund" }]
     }
   },
   {
@@ -76,6 +67,14 @@
     "response": {
       "text": "An app that allows connecting to WiFi networks using NFC tags on iOS.",
       "technologies": ["Swift", "Xcode", "App Clips"]
+    }
+  },
+  {
+    "title": "Logbook",
+    "request": "./projects/Logbook",
+    "response": {
+      "text": "An offline-first logbook to track hourly wage and payslip data using UK tax codes across multiple employers.",
+      "technologies": ["Svelte", "Bun", "Powersync"]
     }
   }
 ]
