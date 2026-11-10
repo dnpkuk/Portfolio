@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Command from "$components/Command.svelte";
+  import Command from "#components/Command.svelte";
 
   export let data;
   $: project = data.project!;

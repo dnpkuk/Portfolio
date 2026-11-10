@@ -1,9 +1,11 @@
 <script lang="ts">
-  import Command from "$components/Command.svelte";
+  import Command from "#components/Command.svelte";
   import projects from "./projects.json";
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  $: base = {
+  let { children } = $props();
+
+  const base = $derived({
     request: "ls projects",
     response: {
       text: "",
@@ -14,13 +16,13 @@
           return {
             text: project.title,
             handler: href,
-            active: href === $page.url.pathname,
+            active: href === page.url.pathname,
           };
         })
         .sort((a, b) => a.text.localeCompare(b.text)),
     },
-  };
+  });
 </script>
 
 <Command command={base} />
-<slot />
+{@render children()}

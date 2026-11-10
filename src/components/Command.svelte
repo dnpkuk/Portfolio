@@ -5,7 +5,7 @@
       text: string;
       technologies?: string[];
       equal_columns?: boolean;
-      links: {
+      links?: {
         text: string;
         active?: boolean;
         handler: string;

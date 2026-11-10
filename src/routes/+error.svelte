@@ -1,14 +1,16 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import Command from "$components/Command.svelte";
+  import { page } from "$app/state";
+  import Command from "#components/Command.svelte";
 
-  const path = $page.url.pathname.slice(1);
-  let pathString = decodeURIComponent(path);
-  if (pathString.includes(" ")) pathString = `"${pathString}"`;
+  const path = $derived(page.url.pathname.slice(1));
+  const pathString = $derived.by(() => {
+    const s = decodeURIComponent(path);
+    return s.includes(" ") ? `"${s}"` : s;
+  });
 </script>
 
 <svelte:head>
-  <title>{$page.status} - Dan Peak</title>
+  <title>{page.status} - Dan Peak</title>
 </svelte:head>
 
 <Command
@@ -16,7 +18,7 @@
     request: "ls " + pathString,
     response: {
       text: `ls: ${decodeURIComponent(path)}: ${
-        $page.status === 404 ? "No such file or directory" : $page.error?.message
+        page.status === 404 ? "No such file or directory" : page.error?.message
       }`,
       links: [],
     },

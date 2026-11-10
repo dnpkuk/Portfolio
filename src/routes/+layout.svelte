@@ -1,8 +1,10 @@
 <script lang="ts">
   import "../app.scss";
-  import Terminal from "$components/Terminal.svelte";
+  import Terminal from "#components/Terminal.svelte";
+
+  let { children } = $props();
 </script>
 
 <Terminal>
-  <slot />
+  {@render children()}
 </Terminal>

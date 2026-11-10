@@ -1,9 +1,9 @@
 <script lang="ts">
   import Menubar from "./Menubar.svelte";
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import { goto } from "$app/navigation";
-  import terminalIcon from "$lib/assets/terminal.png";
-  import githubIcon from "$lib/assets/github.png";
+  import terminalIcon from "#lib/assets/terminal.png";
+  import githubIcon from "#lib/assets/github.png";
 
   let terminal: HTMLDivElement;
   let { children } = $props();
@@ -30,7 +30,7 @@
   <Menubar {closeTerminal} {toggleFullscreen} />
   <div class="content">
     {@render children()}
-    {#if !$page.url.pathname.startsWith("/contact")}
+    {#if !page.url.pathname.startsWith("/contact")}
       <p class="command"><span id="cursor">_</span></p>
     {/if}
   </div>
@@ -41,7 +41,7 @@
     <img src={terminalIcon} alt="Terminal Icon" />
     <span>Terminal</span>
   </button>
-  <button onclick={() => {window.location = "https://github.com/dnpkuk"}}>
+  <button onclick={() => {window.location.href = "https://github.com/dnpkuk"}}>
     <img src={githubIcon} alt="GitHub Icon" />
     <span>GitHub</span>
   </button>
